@@ -67,6 +67,7 @@ img {
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
+  padding-bottom: 12px;
 }
 
 .card__container {
@@ -151,7 +152,7 @@ img {
 
 footer{
   color: white;
-  margin-top: -63px;
+  margin-top: auto;
   text-align: center;
   background: black;
   padding-block: 20px;
@@ -215,7 +216,7 @@ footer{
 
 
 
-@media screen and (min-width: 320px) and (max-width: 1119px){
+@media screen and (min-width: 768px) and (max-width: 1119px){
   .card__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2.5rem;
@@ -231,7 +232,7 @@ footer{
 
 @media screen and (min-width: 1120px) {
   .container {
-    height: 100vh;
+    height: 92vh;
     padding-top: 90px;
   }
 
