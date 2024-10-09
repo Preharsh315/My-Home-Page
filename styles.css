@@ -103,6 +103,7 @@ img {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
+  cursor: default;
 }
 
 .card__title {
@@ -110,6 +111,7 @@ img {
   font-weight: 500;
   color: var(--title-color);
   margin-bottom: .75rem;
+  cursor: default;
 }
 
 .card__button {
@@ -213,11 +215,16 @@ footer{
 
 
 
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1119px){
   .card__container {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
+    column-gap: 2.5rem;
+    row-gap: 5.5rem;
+  }
+
+  .container{
+    padding-top: 185px;
+    padding-bottom: 150px;
   }
 }
 
@@ -225,10 +232,12 @@ footer{
 @media screen and (min-width: 1120px) {
   .container {
     height: 100vh;
+    padding-top: 90px;
   }
 
   .card__container {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
   }
   .card__img {
     width: 348px;
